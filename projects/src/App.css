@@ -1,0 +1,732 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*****************/
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center
+}
+
+
+/******* css for header2 ( profile ) **********/
+
+.wrapper2 {
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #3b3b3b;
+    margin: 10vh auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wrapperForm {
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #3b3b3b;
+    margin: 10vh auto;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #3b3b3b;
+    margin: 10vh auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wrapper img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrapper h4 {
+    color: gray
+}
+
+.wrapper h1 {
+    font-size: 1.5rem;
+}
+
+.wrapper div input {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: #c4c4c4;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.wrapper div input:hover {
+    background-color: #04718f;
+}
+
+
+/*** css for userList  ******/
+
+.userListContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userList {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.list-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    flex-grow: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    font-size: 1.7rem;
+    flex-shrink: 0;
+    background-color: #1cb6e0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.author {
+    flex-grow: 7;
+}
+
+.name a {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.name a:hover {
+    color: #0780a1;
+}
+
+.details {
+    color: #999;
+    font-size: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #999;
+    flex-grow: 2;
+}
+
+
+/* fb post */
+
+.fbpost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f2f5
+    /* flex-direction: column;
+align-items: center; */
+}
+
+.fb-wrapper {
+    width: 400px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fb-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.fb-header img {
+    width: 40px;
+    height: 40px;
+    background-color: #1cb6e0;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fb-title {
+    font-size: 1rem;
+    flex-grow: 8;
+    margin-bottom: 20px;
+}
+
+.fb-title h4 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #999;
+}
+
+.fb-right-pannel {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.fb-right-pannel a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fb-right-pannel a:hover {
+    color: #000;
+}
+
+.fb-img img {
+    width: 100%;
+}
+
+.all-likes {
+    color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.all-likes i {
+    background-color: #1cb6e0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.all-likes a {
+    text-decoration: none;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.all-likes a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.fb-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-action button {
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    color: #333;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.fb-action button:hover {
+    background-color: #ddd;
+}
+
+.fb-action i {
+    margin-right: 5px;
+}
+
+.fb-all-comment p {
+    font-size: 0.8rem;
+}
+
+.fb-all-comment p a {
+    color: #666;
+    font-weight: bold;
+}
+
+.fb-all-comment p a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+.fb-coment-user {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.fb-coment-user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fb-coment-user .title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.fb-coment-user .title p {
+    font-weight: normal;
+    margin: 0;
+}
+
+.fb-coment-user a {
+    color: #000;
+}
+
+.emoji i {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.emoji div {
+    margin-left: 40px;
+}
+
+.emoji div a {
+    font-size: 0.7rem;
+    margin-right: 10px;
+    color: #222;
+    font-weight: bold;
+}
+
+.liked {
+    color: rgb(8, 102, 255)!important;
+}
+
+.fb-write-comment {
+    margin: 10px 0;
+    position: relative;
+}
+
+.fb-write-comment img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fb-write-comment textarea {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    width: 88%;
+    resize: none;
+    height: 20px;
+}
+
+.fb-icons {
+    position: relative;
+}
+
+.fb-icons a {
+    position: absolute;
+    top: -26px;
+    font-size: 1.2rem;
+    color: #adadad;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.fb-icons a:hover {
+    color: #222;
+}
+
+.one {
+    right: 10px;
+}
+
+.two {
+    right: 40px;
+}
+
+.three {
+    right: 70px;
+}
+
+.four {
+    right: 100px;
+}
+
+
+/* User Table */
+
+.wrapperForm table,
+tr,
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+.userTable table,
+tr,
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+.userTable th {
+    background-color: #1cb6e0;
+    color: #fff;
+}
+
+.userTable input[type='text'] {
+    width: 90%;
+    padding: 2px;
+}
+
+
+/* tic tac toe */
+
+.parent-tictac-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell {
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.cell:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+}
+
+.btn-primary {
+    background: #1cb6e0;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #04718f;
+}
+
+.lable {
+    width: 300px;
+}
+
+
+/* Carousel */
+
+.Carousel {
+    display: flex;
+}
+
+.pre,
+.next {
+    width: 50px;
+    font-size: 2rem;
+    height: 500px;
+    line-height: 300px;
+    z-index: 9;
+}
+
+.pre a,
+.next a {
+    color: #000000;
+    z-index: 9;
+}
+
+.pre a:hover,
+.next a:hover {
+    color: #1cb6e0;
+}
+
+.carousel-img {}
+
+.carousel-img img {
+    width: 100%;
+}
+
+.overflow {
+    overflow: hidden;
+    height: 250px;
+    display: inline;
+}
+
+
+/* Slider */
+
+.slider {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.left,
+.right {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 9;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.left a,
+.right a {
+    color: #888;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.left a:hover,
+.right a:hover {
+    color: #000000
+}
+
+.slide-img {
+    display: flex;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.slide-img img {
+    width: 100%;
+    left: 0%;
+    position: relative;
+}
+
+.slideOne {
+    left: 0%;
+    z-index: 1;
+    transition-duration: 2s;
+    transition: ease-in;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+    animation: fadeIn1 2s;
+    -webkit-animation: fadeIn1 2s;
+}
+
+.slideTwo {
+    left: -100%;
+    z-index: 2;
+    transition-duration: 2s;
+    transition: ease-in;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+    animation: fadeIn2 2s;
+    -webkit-animation: fadeIn2 2s;
+}
+
+.slideThree {
+    left: -200%;
+    z-index: 3;
+    transition-duration: 2s;
+    transition: ease-in;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+    animation: fadeIn3 2s;
+    -webkit-animation: fadeIn3 2s;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.indicators {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+}
+
+.indicators a {
+    margin: 0 3px;
+}
+
+.indicators a img {
+    width: 30px;
+    height: 30px;
+}
+
+.indicators a i {
+    color: #1cb6e0;
+    font-size: 0.8rem;
+}
+
+.indicators a i:hover {
+    color: #000;
+}
